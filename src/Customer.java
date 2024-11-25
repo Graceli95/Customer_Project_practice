@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Customer {
-    String[] customer = new String[5];
+    String[] customers = new String[5];
 
     Scanner scanner = new Scanner(System.in);
     String firstName, lastName;
@@ -29,16 +29,16 @@ public class Customer {
             System.out.println("Enter last name for customer " + (i + 1) + ": " + lastName);
 //            scanner.nextLine();
 
-            customer[i] = firstName + " " + lastName;
+            customers[i] = firstName + " " + lastName;
         }
 
-
+    scanner.close();
     }
 
     public void displayCustomerData() {
         System.out.println("Customer List: ");
-        for (String eachCustomer : customer) {
-            System.out.println(eachCustomer);
+        for (String customer : customers) {
+            System.out.println(customer);
         }
     }
 
