@@ -17,8 +17,7 @@ public class Customer {
               System.out.println("Customer's first name cannot be empty");
              break;
           }
-            System.out.println("Enter first name for customer " + (i + 1) + ": " + firstName);
-//            scanner.nextLine();
+
 
             System.out.print("Enter last name for customer " + (i + 1) + ": ");
             lastName = scanner.nextLine().trim();
@@ -26,8 +25,6 @@ public class Customer {
               System.out.println("Customer's last name cannot be empty");
               break;
           }
-            System.out.println("Enter last name for customer " + (i + 1) + ": " + lastName);
-//            scanner.nextLine();
 
             customers[i] = firstName + " " + lastName;
         }
